@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.license   = 'Apache-2.0'
   s.files     = Dir['lib/*.rb']
 
-  s.required_ruby_version = '>= 1.9.0'
+  s.required_ruby_version = '>= 2.7.7'
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'simplecov'
