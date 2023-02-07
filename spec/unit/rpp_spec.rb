@@ -39,7 +39,7 @@ RSpec.describe RethinkDB::RPP do
 
       context 'with correct params' do
         let(:time) { Time.now }
-        let(:zone) { Time.now.isdst ? '+02:00' : '+01:00' }
+        let(:zone) { time.utc_offset }
         let(:params) { pt_hash.merge('timezone' => zone, 'epoch_time' => time.to_i)}
         let(:q) { double("q") }
 
